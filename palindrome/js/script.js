@@ -29,7 +29,7 @@ Dare l’output relativo.
 -creo la funzione che mi permette di richiamarla quando mi serve
     -creo una variabile della lunghezza della parola - 1
     -creo un ciclo che mi permette di invertire la direzione della parola//-finche' la lunghezza della parola-1 e' maggiore o uguale a 0 continui a ciclare
-        -la variabile della lettera e' assegnata con l'indice ultimo della parola fornita es. ciao, [c] [i] [a] [o]              [0] [1] [2] [3], ecco perche usiamo il -1 alla lunghezza della parola
+        -la variabile della lettera e' assegnata con l'indice ultimo della parola fornita es. ciao.lenght=4, [c] [i] [a] [o]       [0] [1] [2] [3], ecco perche usiamo il -1 alla lunghezza della parola
         -assegnamo alla variabile che contiene l'insieme delle lettere, il contenuto di se stessa + la lettera
         -decremento il conteggio dell'indice per andare indietro
 -se la parola inserita dall'utente e' uguale alla variabile che contiene le lettere al contrario
