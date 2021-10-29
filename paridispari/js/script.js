@@ -10,6 +10,7 @@ Dichiariamo chi ha vinto.
 /* 
 -creo un prompt per chiedere all'utente di scrivere pari o dispari ok
 -creo un prompt per chiedere all'utente di scrivere un numero da 1 a 5 ok
+-se l'utente inserisce un numero minore o maggiore gli richiedo il numero
 -creo una funzione ok
     -creo una variabile che mi permette di creare un numero random da 1 a 5 ok
 -creo una variabile che sommi il numero inserito dall'utente con quello generato dal pc ok
@@ -26,9 +27,12 @@ Dichiariamo chi ha vinto.
 */
 
 const userString = prompt("Choose odd or even");
-const userNum = parseInt(prompt("Choose a number from 1 to 5"));
+let userNum = parseInt(prompt("Choose a number from 1 to 5"));
 let pcNum = randomNum(5);
 
+while (userNum < 1 || userNum > 5){
+    userNum = parseInt(prompt("Choose a number from 1 to 5, NOT MORE OR LESS!!!!"));
+}
 
 function randomNum (max){
     let pcNumFun= Math.floor(Math.random()* max +1);
